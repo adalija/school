@@ -1,0 +1,229 @@
+
+html { font-size: 16px;	font-size: 62.5%;} /* 62.5% of 16 = 10 */
+
+body { background-color: gray; max-width: 1920px; min-width: 1024px; font: 1.6rem/1.5 arial;}
+header { color: #fff; min-width: 1000px; padding-top: 15rem; padding-bottom: 15rem; background-color: #353541;}
+nav { background-color: #353541; }
+nav ul { display: none; list-style: none; width: 30rem; margin: 0;}
+/*main { display: table-cell; content: ' '; clear: both; padding: 10px 0; }*/
+/*main p { width: 50%; float: left; padding: 10px; }*/
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+.wrapper { width: 72%; margin: 0 auto; background-color: #fff; position: relative; min-height: 100%;
+font-family: raleway, sans-serif; font-weight: 400; font-style: normal;}
+.menuOpenHeading { display: none; text-align: center;}
+.menuClosedHeading { display: block; 
+	text-align: center;
+	margin-left: 30rem;}
+
+.show-menu .shiftOver { padding-left: 30rem; }
+.show-menu .shiftOverMore { padding-left: 2rem; } /* weird img alignment*/
+.show-menu nav ul {display: block; background-color: #353541;}
+.show-menu nav li {border-bottom: 1px solid black; padding: 2rem; font-size: 2.5rem;}
+.show-menu nav {  position: absolute; top: 15rem; bottom: 0; }
+.show-menu .menuOpenHeading { display: block; }
+.show-menu .menuClosedHeading { display: none;}
+
+				/* Da ting*/
+.toggle::before { content: "☰"; display: block; 
+	width: 30rem;
+	font-size: 4rem; 
+	padding-top: 5rem;
+	padding-left: 5%;
+	position: absolute;
+	color: #fb6470;
+	top: 0;} 
+				/* Da Ada Ting */
+.show-menu .toggle::before { content: "⊗"; 
+	padding-left: 5%; 
+	color: #fb6470;
+									/* --Gradient Background Open--*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353541+0,4e6182+51,353541+99 */
+background: #353541; /* Old browsers */
+background: -moz-linear-gradient(top, #353541 0%, #4e6182 51%, #353541 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #353541 0%,#4e6182 51%,#353541 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #353541 0%,#4e6182 51%,#353541 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353541', endColorstr='#353541',GradientType=0 ); /* IE6-9 */
+									/* --Gradient Background Close--*/}
+nav a:hover {color: #fb6470;}
+
+/*--- Typograpgical Styles ---*/
+h1 {font-weight: 500;
+	font-size: 6rem;
+	margin: 0 auto;}
+
+.menuClosedHeading h1{border-top: 3px solid #fb6470;
+	border-bottom: 3px solid #fb6470;
+	width: 30%;}
+
+.menuOpenHeading h1{font-family: raleway, sans-serif;
+	font-weight: 600;}
+
+.menuClosedHeading h3 { font-size: 2.25rem;
+	margin-top: 1rem;}
+
+.menuOpenHeading h3 {width: 55%;
+	margin: 0 auto;}
+
+.menuClosedHeading a, .menuOpenHeading a {font-size: 2.75rem;
+	padding: 1rem 5rem;
+	border-radius: 5px;
+	margin-top: 3rem;
+	background-color: #fb6470;}
+
+.menuClosedHeading a:hover, .menuOpenHeading a:hover , .forms-left a:hover{background-color: #fa4856; color: #1d1d24;}
+/*--- Authors Styles --- */
+
+main section {padding: 8rem 8rem 0 10rem;
+	background-color: #fff;
+	min-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 2px solid grey;}
+
+section h2 {color: #3e3e3e; 
+	font-size: 4rem;
+	font-weight: 700;}	
+
+.border-bot {height: 3px;
+	width: 10rem;
+	background-color: #fb6470;}
+
+.aboutMe {background-color: #fff;
+		padding-bottom: 5rem;}
+
+.aboutMe-left {width: 50%; 
+	float: left;}
+
+.aboutMe-left p {margin: 2rem 0; 
+	width: 86%; 
+	color: #818181; 
+	font-size: 2rem; 
+	font-weight: 900;}
+
+.aboutMe-left li {background-color: #f9f9f9; 
+	width: 70%; 
+	margin-top: 2px; 
+	font-size: 2.25rem;
+	padding: 1rem 0;}
+
+.aboutMe-desc {font-weight: 600; color: #3e3e3e;}
+
+.aboutMe img {min-width: 380px; height: 581px; margin-left: 3rem;}
+
+.leftSide {width: 50%;
+	border-right: 2px solid black;
+	background-color: #fff;
+	float: left;
+	position: relative;
+	padding-top: 15rem;}
+
+.rightSide {width: 50%; 
+	background-color: #fff; 	
+	margin-bottom: 12rem;
+	float: right; 
+	position: relative; 
+	padding-bottom: 15rem;
+	display: inline-block;}
+
+.rightSide ol, .leftSide ol {width: 90%; 
+	padding: 1.5rem 2.5rem;
+	border-radius: 10px;
+	background-color: #353541;
+	color: #fff; 
+	position: relative; 
+	left: 0;}
+
+.rightSide ol {margin-left: 10%; top: 0;}
+	/* Dialogue Box Images */
+.leftSide .chart, .rightSide .chart {height: 4.25rem; width: 4.25rem; position: absolute;}
+.leftSide .chart {top: -2px; margin-left: 96.5%;}
+.rightSide .chart {bottom: -2px; margin-left: -4%; z-index: 100;}
+
+.leftSide .tail, .rightSide .tail {height: 5%; width: 5%; position: absolute;}
+.leftSide .tail {bottom: 13rem; right: 5%;}
+.rightSide .tail {top: 2rem; margin-left: 5%;}
+	/* //Dialogue Box Images*/
+
+.dialogueBox li {width: 85%;}
+
+.dialogueBox li:first-child {font-size: 2.25rem; width: 100%;}
+
+.dialogueBox li:nth-child(2) {font-size: 2rem; color: #fb6470;}
+
+.dialogueBox li:last-child {font-size: 1.75rem;}
+
+.dialogueBox span {font-size: 1.8rem; color: #dadada;}
+
+.extendedBorder {padding-bottom: 12rem;}
+
+.leftSide .extendedFix {bottom: 2rem;}
+
+.skills {background-color: #1d1d24;
+	position: relative;
+	color: #fff;
+	padding-bottom: 8rem;}
+.skills h2 {color: #fff;}
+
+.skill-left ol {width: 50%; float: left; margin-top: 5rem;}
+
+.ranges img {width: 80%;}
+
+.ranges h4 {font-size: 2.25rem;}
+
+.ranges h5 {float: right; padding-right: 12%;}
+
+.contact {padding-bottom: 10rem;}
+.contact ol {float: left; width: 49%;}
+
+.right-border {border-right: 1px solid black;}
+
+.contact h2 {font-size: 2.75rem;}
+
+.forms-left li {margin-top: 2rem;}
+
+.forms-left a {	padding: 1rem 5rem;
+	margin-top: 2rem;
+	background-color: #fb6470;
+	margin-left: 40%;}
+
+.forms-left h5 {font-size: 2.5rem; margin-bottom: 2rem;}
+
+.forms-left i {font-size: 5rem; margin: 5rem 10rem; padding-top: 1rem; float: left;}
+
+.forms-left i:first-child {margin-top: 0rem; padding-top: 0;}
+
+.paddingfix {margin-top: -5rem;}
+
+label {vertical-align: top;}
+
+input, textarea {width: 60%; resize: none; border: 1px solid black;}
+
+input {margin-left: 2.5rem; height: 3rem;}
+
+textarea {height: 10rem;}
+
+footer {padding: 5rem; min-width: 1000px; width: 100%;}
+
+footer li {text-align: center;}
+
+footer i {font-size: 3rem; color: #9b9b9b;}
+
+footer span {margin: 0 1rem; font-size: 3rem;}
+
+.blue {color: #69d4d8;}
+
+footer i:hover {color: #fb6470;}
+/*--- Navigational behaviours --- */
+a {display: inline-block;
+	text-decoration: none;}
+
+a:link, a:visited {
+  color: #fff;      /* unvisited link and a visted link */
+  }
+
+a:hover, a:active {
+  color: #fff;      /* mouse over  and selected link */
+  }
+
+
